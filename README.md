@@ -1,2 +1,2 @@
 # Initiation
-Three column canvas built with simplicity in mind.
+Initiation helps you give visitors an unforgettable, pleasurable viewing experience with stunning animations and its ease of use. Its beautiful layout and countless features make it an ideal theme for almost anything.
