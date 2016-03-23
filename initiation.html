@@ -29,6 +29,7 @@
         
         
         <!-- Nav -->
+        <meta name="if:Navigation" content="1"/>
         <meta name="if:Hide Tumblr Default Buttons" content="0"/>
         <meta name="if:Random Link" content="1"/>    
         <meta name="if:Archive Link" content="1"/>    
@@ -342,6 +343,7 @@
             {/block:ShowDescription}
         </div>
         
+        {block:ifnavigation}
         <div class="header-bottom">
             <nav class="navigation {select:Navigation Text}">
                 <ul>
@@ -392,6 +394,7 @@
                 </ul>
             </nav>
         </div>
+        {/block:ifnavigation}
             
             
     </header>
@@ -597,12 +600,14 @@
                             
                         
                             <div class="post-header">
+                                {block:NoteCount}
                                 <div class="note-count" class="{block:IndexPage}post modal post-photo pp{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="photo">
                                     <a href="{Permalink}" data-id="{PostID}" class="open-post">
                                         <i class="twa twa-heart-eyes"></i> 
-                                        <span>{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</span>
+                                        <span>{NoteCountWithLabel}</span>
                                     </a>
                                 </div>
+                                {/block:NoteCount}
                             </div>
                             
                             <div class="post-share">
