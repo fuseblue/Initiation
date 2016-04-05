@@ -21,11 +21,13 @@
         <meta name="color:Title" content="#111111">
         <meta name="color:Text" content="#111111">
         <meta name="color:Accent" content="#111111">
+        <meta name="color:Banner Logo" content="#ffffff">
     
         <meta name="if:Repeat Background Image" content="0">
         
         <!-- Banner -->
         <meta name="image:Banner Background" content=""/>
+        <meta name="if:Banner Background" content="0"/>
         
         
         <!-- Nav -->
@@ -99,7 +101,7 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
     <link href="http://static.tumblr.com/b5aw2yz/VW3nj01lh/twemoji-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family={select:Font}:400,400italic,700,700italic">
-    <link href="http://static.tumblr.com/evx2wil/OVEo4k9ri/core.css" rel="stylesheet">
+    <link href="http://static.tumblr.com/evx2wil/ncoo55wyn/core.css" rel="stylesheet">
     
     <style type="text/css">
         
@@ -129,6 +131,10 @@
 
         .fuse-content .post-answer {
             border: 5px solid {color:Accent};
+        }
+        
+        #banner h1.banner-logo {
+            color:{color:Banner Logo};
         }
 
         /* Global styles */
@@ -310,7 +316,7 @@
 <body class="{block:IndexPage}index-page{/block:IndexPage}{block:PermalinkPage} post-page{/block:PermalinkPage}">
     
     {block:IndexPage}
-        {block:ifbannerbackgroundimage}
+        {block:IfBannerBackground}
             <div id="banner">
                 <h1 class="banner-logo">{Title}</h1>
                 <div class="banner-img"></div>
@@ -322,7 +328,7 @@
 
                 </div>
             </div>
-        {/block:ifbannerbackgroundimage} 
+        {/block:IfBannerBackground} 
     {/block:IndexPage}
 
     
