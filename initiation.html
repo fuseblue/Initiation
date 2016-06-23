@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Initiation by Fuse.  fuseblue.com, twitter.com/askfuse  -->
+<!-- Initiation Pro by Fuse.  fuseblue.com, twitter.com/askfuse  -->
 <!-- Help and FAQ: fuseblue.com/help -->
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -139,7 +139,7 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
     <link href="http://static.tumblr.com/b5aw2yz/VW3nj01lh/twemoji-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family={select:Google Font}:400,400italic,700,700italic">
-    <link href="http://static.tumblr.com/evx2wil/o18o6dfp7/core.css" rel="stylesheet">
+    <link href="http://static.tumblr.com/evx2wil/pTko97mui/core.css" rel="stylesheet">
     
     <style type="text/css">
         
@@ -588,7 +588,9 @@
             }
         }
         
-        
+        #fuse-ants .post-photo .post-footer, #fuse-ants .post-photoset .post-footer {
+            display:none;
+        }
 
         .fuse-caption.visible {
             overflow: visible;
@@ -710,7 +712,7 @@
                 top: 50%;
                 right: 0px;
                 transform: translateY(-50%);
-                opacity: 1;
+                opacity: 0;
                 transition: .3s opacity;
                 padding: 3px;
                 background: {color:Sidebar Background};
@@ -888,17 +890,17 @@
                 </ul>
                 <ul class="social-links{block:ifsociallinksicons} social-links-icons{/block:ifsociallinksicons}">
                     
-                    {block:ifInstagramURL}<li><a href="{text:Instagram URL}"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>{block:ifInstagramURL}
-                    {block:ifTwitterURL}<li><a href="{text:Twitter URL}"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>{/block:ifTwitterURL}
-                    {block:ifFacebookURL}<li><a href="{text:Facebook URL}"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>{/block:ifFacebookURL}
-                    {block:ifYoutubeURL}<li><a href="{text:Youtube URL}"><i class="fa fa-youtube"></i><span>Youtube</span></a></li>{/block:ifYoutubeURL}  
-                    {block:ifSoundcloudURL}<li><a href="{text:Soundcloud URL}"><i class="fa fa-soundcloud"></i><span>Soundcloud</span></a></li>{/block:ifSoundcloudURL}    
-                    {block:ifBehanceURL}<li><a href="{text:Behance URL}"><i class="fa fa-behance"></i><span>Behance</span></a></li>{/block:ifBehanceURL}    
-                    {block:ifDribbbleURL}<li><a href="{text:Dribbble URL}"><i class="fa fa-dribbble"></i><span>Dribbble</span></a></li>{/block:ifDribbbleURL}    
-                    {block:ifFlickrURL}<li><a href="{text:Flickr URL}"><i class="fa fa-flickr"></i><span>Flickr</span></a></li>{/block:ifFlickrURL}   
-                    {block:ifLinkedinURL}<li><a href="{text:Linkedin URL}"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a></li>{/block:ifLinkedinURL}    
-                    {block:ifPinterestURL}<li><a href="{text:Pinterest URL}"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>{/block:ifPinterestURL}    
-                    {block:ifVimeoURL}<li><a href="{text:Vimeo URL}"><i class="fa fa-vimeo"></i><span>Vimeo</span></a></li>{/block:ifVimeoURL}    
+                    {block:ifInstagramURL}<li><a href="{text:Instagram URL}"><i class="fa fa-instagram"></i><span>instagram</span></a></li>{block:ifInstagramURL}
+                    {block:ifTwitterURL}<li><a href="{text:Twitter URL}"><i class="fa fa-twitter"></i><span>twitter</span></a></li>{/block:ifTwitterURL}
+                    {block:ifFacebookURL}<li><a href="{text:Facebook URL}"><i class="fa fa-facebook"></i><span>facebook</span></a></li>{/block:ifFacebookURL}
+                    {block:ifYoutubeURL}<li><a href="{text:Youtube URL}"><i class="fa fa-youtube"></i><span>youtube</span></a></li>{/block:ifYoutubeURL}  
+                    {block:ifSoundcloudURL}<li><a href="{text:Soundcloud URL}"><i class="fa fa-soundcloud"></i><span>soundcloud</span></a></li>{/block:ifSoundcloudURL}    
+                    {block:ifBehanceURL}<li><a href="{text:Behance URL}"><i class="fa fa-behance"></i><span>behance</span></a></li>{/block:ifBehanceURL}    
+                    {block:ifDribbbleURL}<li><a href="{text:Dribbble URL}"><i class="fa fa-dribbble"></i><span>dribbble</span></a></li>{/block:ifDribbbleURL}    
+                    {block:ifFlickrURL}<li><a href="{text:Flickr URL}"><i class="fa fa-flickr"></i><span>flickr</span></a></li>{/block:ifFlickrURL}   
+                    {block:ifLinkedinURL}<li><a href="{text:Linkedin URL}"><i class="fa fa-linkedin"></i><span>linkedin</span></a></li>{/block:ifLinkedinURL}    
+                    {block:ifPinterestURL}<li><a href="{text:Pinterest URL}"><i class="fa fa-pinterest"></i><span>pinterest</span></a></li>{/block:ifPinterestURL}    
+                    {block:ifVimeoURL}<li><a href="{text:Vimeo URL}"><i class="fa fa-vimeo"></i><span>vimeo</span></a></li>{/block:ifVimeoURL}    
                     
                 </ul>
             </nav>
@@ -951,7 +953,7 @@
                 </div>
                 <div class="sc-controls">
                     <div class="pause-play">
-                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause"></i>
                     </div>
                     <div class="prev">
                         <i class="fa fa-step-backward"></i>
@@ -993,7 +995,7 @@
         
         
         <p class="footer">
-        <a href="http://fuseblue.com/themes/initiation/" target="_blank">Made with <i class="twa twa-heart"></i> by Fuse</a></br>
+        <a href="http://fuseblue.com" target="_blank">Initiation by Fuse</a></br>
         </p>
         
         </div>
@@ -1003,12 +1005,16 @@
     <div id="fuse" class="page {block:PermalinkPage}single {/block:PermalinkPage} {select:Post Spacing}">
         <div id="posts">
             <div class="wrap {select:Website Size}">
-                {block:PermalinkPage}
+                {block:IndexPage}
+                <div id="fuse-ants">
+                <div class="ants-sizer-three"></div>
+                <div class="ants-gutter-three"></div>
+                {/block:IndexPage}
                 {block:Posts}
                     <input id="post-notes-url" type="hidden" value="{PostNotesURL}">
                     
                     {block:Photo}
-                    <article id="{PostID}" class="{block:IndexPage}post modal post-photo pp{/block:IndexPage}{block:PermalinkPage}{block:Date} post-single{/block:Date}{/block:PermalinkPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="photo">
+                    <article id="{PostID}" class="{block:IndexPage}ants-item-three post modal post-photo pp{/block:IndexPage}{block:PermalinkPage}{block:Date} post-single{/block:Date}{/block:PermalinkPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="photo">
                         <div class="inner">
                             <div class="media">
                             
@@ -1021,7 +1027,7 @@
                             
                                 {block:PermalinkPage}
                                 {LinkOpenTag}
-                                    <div class="overlay"></div>
+                                    <div class="overlay-bg"></div>
                                     <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
                                 {LinkCloseTag}
                                 {/block:PermalinkPage}
@@ -1030,12 +1036,70 @@
                             <div class="content">
                                 {block:Caption}{Caption}{/block:Caption}
                             </div>
+                            
+                        <footer class="overlay">
+
+                        
+
+                            {block:NoteCount} 
+                            <div class="note-count" class="{block:IndexPage}post modal post-photo pp{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="photo">
+                                <a href="{Permalink}" data-id="{PostID}" class="open-post">
+                                    <i class="twa twa-heart-eyes"></i> 
+                                    <span>{NoteCountWithLabel}</span>
+                                </a>
+                            </div>
+                            {/block:NoteCount}
+
+                            
+                            <div class="post-share">
+                                <div class="inner">
+                                    <div class="close-post-share">
+                                        <svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g  transform="translate(-2.111111, -50.111111)" fill="#FFFFFF">
+                                                    <g  transform="translate(2.111111, 50.111111)">
+                                                        <path d="M12.5861,2.38852192 L10.7836781,0.5861 L6.5861,4.78431542 L2.38852192,0.5861 L0.5861,2.38852192 L4.78367808,6.5861 L0.5861,10.7836781 L2.38852192,12.5861 L6.5861,8.38852192 L10.7836781,12.5861 L12.5861,10.7836781 L8.38852192,6.5861 L12.5861,2.38852192 Z"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    
+                                    <div class="social-media">
+                                        <span class="share-facebook tooltip" title="Share on Facebook"><a class="share-icon-facebook" href="https://www.facebook.com/sharer.php?u={Permalink}{block:Title}&t={Title}{/block:Title}" target="_new"></a></span>
+                                        <span class="share-twitter tooltip" title="Share on Twitter"><a class="share-icon-twitter" href="https://twitter.com/intent/tweet?url={ShortURL}" target="_new"></a></span>
+                                        <span class="share-pinterest tooltip" title="Share on Pinterest"><a class="share-icon-pinterest" target="_new" href="http://pinterest.com/pin/create/button/?url={Permalink}&media={PhotoURL-500}"></a></span>
+                                        <span class="share-google tooltip" title="Share on Google+"><a class="share-icon-google-plus" href="https://plus.google.com/share?url={Permalink}" target="_new"></a></span>
+                                    </div>
+                                    
+                                    <div class="social-media-footer">
+                                        <a class="open-post" href="{Permalink}" data-id="{PostID}">{Permalink}</a>
+                                        <a class="button copy-button" data-clipboard-text="{Permalink}">Copy</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        
+                            
+                            <ul class="share index">
+                                <li class="share-toggle tooltip" title="Share this post">
+                                    <a><i class="fa fa-share grey"></i></a>
+                                </li>
+                                <li class="post-like tooltip" title="Like this post">
+                                    {LikeButton color="grey" size="15"}
+                                </li>
+                                <li class="post-reblog tooltip" title="Reblog this post">
+                                    <a href="{ReblogURL}"><i class="fa fa-lg fa-retweet grey"></i></a>
+                                </li>
+                            </ul>
+                    
+                        </footer>   
+                            
                     {/block:Photo}
         
                 
         
                     {block:Text}
-                    <article id="{PostID}" class="{block:IndexPage}post modal post-text{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="text">
+                    <article id="{PostID}" class="{block:IndexPage}ants-item-three post modal post-text{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="text">
                         <div class="inner">
                         
                             <div class="content">
@@ -1047,7 +1111,7 @@
         
         
                     {block:Audio}      
-                    <article id="{PostID}" class="{block:IndexPage}post modal post-audio{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="audio">
+                    <article id="{PostID}" class="{block:IndexPage}ants-item-three post modal post-audio{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="audio">
                         <div class="inner">
                         
                             <div class="media">
@@ -1060,7 +1124,7 @@
         
     
                     {block:Video}
-                    <article id="{PostID}" class="{block:IndexPage}post modal post-video{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="video">
+                    <article id="{PostID}" class="{block:IndexPage}ants-item-three post modal post-video{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="video">
                         <div class="inner">
                             <div class="media">{Video-500}</div>
         
@@ -1071,7 +1135,7 @@
             
         
                     {block:Quote}
-                        <article id="{PostID}" class="{block:IndexPage}post modal post-quote{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="quote">
+                        <article id="{PostID}" class="{block:IndexPage}ants-item-three post modal post-quote{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="quote">
                             <div class="inner">
                                 <div class="content">
                                     <blockquote>{Quote}</blockquote>
@@ -1081,7 +1145,7 @@
                 
             
                      {block:Link}
-                        <article id="{PostID}" class="{block:IndexPage}post modal post-link{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="link">
+                        <article id="{PostID}" class="{block:IndexPage}ants-item-three post modal post-link{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="link">
                             <div class="inner">
                                 <div class="content">
                                     <h1><a class="link" href="{URL}">{Name}</a></h1>
@@ -1091,7 +1155,7 @@
       
            
                     {block:Chat}
-                    <article id="{PostID}" class="{block:IndexPage}post modal post-chat{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="chat"> 
+                    <article id="{PostID}" class="{block:IndexPage}ants-item-three post modal post-chat{/block:IndexPage}" data-id="{PostID}" data-notes="{PostNotesURL}" data-pt="chat"> 
                         <div class="content">
                             <ul class="chat">
                                 {block:Lines}<li class="{Alt}">{block:Label}<span class="person">{Label}</span>{/block:Label}<span class="said"> {Line} </span></li>{/block:Lines}
@@ -1101,7 +1165,7 @@
                 
                 
                     {block:Photoset}
-                        <article id="{PostID}" class="{block:IndexPage}post modal post-photoset pp{/block:IndexPage}" data-id="{PostID}"  data-notes="{PostNotesURL}" data-pt="photoset">
+                        <article id="{PostID}" class="{block:IndexPage}ants-item-three post modal post-photoset pp{/block:IndexPage}" data-id="{PostID}"  data-notes="{PostNotesURL}" data-pt="photoset">
                                 <div class="media">
                                     <div class="fuse-photoset ips">
                                         <div class="ps-nav-left"></div>
@@ -1125,7 +1189,7 @@
                     
                     
                     {block:Answer}
-                    <article id="{PostID}" class="{block:IndexPage}post post-answer{/block:IndexPage}" data-notes="{PostNotesURL}" data-pt="answer">
+                    <article id="{PostID}" class="{block:IndexPage}ants-item-three post post-answer{/block:IndexPage}" data-notes="{PostNotesURL}" data-pt="answer">
                     <div class="inner">
                         <div class="content">
                         <div class="asker-box">
@@ -1193,6 +1257,8 @@
                     
                         </div>
                         </div>
+                        
+
                         
                         <footer class="post-footer">
                     
@@ -1290,7 +1356,7 @@
                 </article>
         
             {/block:Posts}
-            {/block:PermalinkPage}
+            {block:IndexPage}</div>{/block:IndexPage}
 
             </div>
         </div>
@@ -1310,9 +1376,9 @@
     <script type="text/javascript" src="http://static.tumblr.com/evx2wil/JbFo6cz0v/plugins.js">
     </script>
 
-    <script type="text/javascript" src="http://static.tumblr.com/evx2wil/OjGo6avtc/initiation.js"></script>
+    <script type="text/javascript" src="http://static.tumblr.com/evx2wil/UxWo97mry/initiation.js"></script>
     <script src="http://static.tumblr.com/evx2wil/WfJo6avqo/modal.js"></script>
-    <script src="http://static.tumblr.com/evx2wil/mBGo6dfoo/ants.js"></script>
+    <script src="http://static.tumblr.com/evx2wil/ePto97mxl/ants.js"></script>
     
     {block:IfSoundcloudWidgetURL}
         <script src="https://w.soundcloud.com/player/api.js"></script>
@@ -1329,8 +1395,6 @@
                 TweenLite.to('.header, .page', 0.8, {opacity: 1, y: 0});
                 $(document).ready(function(){
                     $.fuseAnts();
-                    $('.tooltip').tooltipster({ multiple: true });
-                    $('.tooltip-left').tooltipster({ position: 'left', multiple: true });
                     $('.fuse-photoset.ips').fuseIPS();
                     $(window).scroll(function(){
                         if ($("body").scrollTop() > 50) {
@@ -1349,9 +1413,32 @@
                         TweenLite.to( window, .5, {scrollTo:{y: 0 }, ease:Power2.easeOut});
                     })
                     $(".fuse-header .head-top").append( $(".fuse-header .head nav").clone() );
+                    $( "li.post-like" ).each(function( index ) {
+                        var likeSvg = $(this).find('.fa');
+                        $(this).find(".like_button").append(likeSvg);
+                    });
+                    $("li.post-reblog:not(.done)").each(function( index ) {
+                        $(this).addClass('done');
+                        $(this).find('a svg').remove();
+                        var reblogSvg = $(this).find('svg.dual-reblog');
+                        $(this).find("a.reblog_button").append(reblogSvg);
+                    });
                     {block:IfSoundcloudWidgetURL}
                         $.fuseSC({block:IfSoundcloudWidgetAutoplay}true{/block:IfSoundcloudWidgetAutoplay});
                     {/block:IfSoundcloudWidgetURL}
+                });
+                
+                $antsIsoCont = $('#fuse-ants');
+                antsIsotope = $antsIsoCont.isotope({
+                    transitionDuration: 0,
+                    hiddenStyle: {opacity: 0},
+                    visibleStyle: {opacity: 0},
+                    itemSelector: '.ants-item-three',
+                    percentPosition: true,
+                    masonry: {
+                        columnWidth: '.ants-sizer-three',
+                        gutter: '.ants-gutter-three' 
+                    }
                 });
             })(window.jQuery);
             {block:IfSitePreloader}
