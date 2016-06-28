@@ -1373,15 +1373,23 @@
     
             <!-- Header Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://static.tumblr.com/evx2wil/JbFo6cz0v/plugins.js">
+    <script type="text/javascript" src="http://static.tumblr.com/evx2wil/ijOo9i6ra/plugins.js">
     </script>
 
     <script type="text/javascript" src="http://static.tumblr.com/evx2wil/UxWo97mry/initiation.js"></script>
     <script src="http://static.tumblr.com/evx2wil/WfJo6avqo/modal.js"></script>
     <script src="http://static.tumblr.com/evx2wil/ePto97mxl/ants.js"></script>
     
-    {block:IfSoundcloudWidgetURL}
+    {block:IfSoundcloudWidgetURL} 
+        <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
         <script src="https://w.soundcloud.com/player/api.js"></script>
+        <script>
+            soundcloudURL = "{text:Soundcloud Widget URL}";
+            soundcloudClientID = '394aae1023264c7233cb81fab17fe036';
+            // SC.initialize({
+            //     client_id: soundcloudClientID
+            // });
+        </script>
     {/block:IfSoundcloudWidgetURL}
     
     {block:IfTypeKitID}
@@ -1508,7 +1516,7 @@
     </script>
 
     {block:IfSoundcloudWidgetURL}
-        <iframe id="fuse-sc" src="https://w.soundcloud.com/player/?url={text:Soundcloud Widget URL}" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+        <div id="fuse-sc"></div>
     {/block:IfSoundcloudWidgetURL}
 
     {block:Twitter}
