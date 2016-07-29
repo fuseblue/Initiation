@@ -67,9 +67,6 @@
         
         <meta name="text:Sidebar Text Widget" content="">
         <meta name="if:Twitter Widget" content="0"/>
-        <meta name="text:Soundcloud Widget Title" content="Soundcloud">
-        <meta name="text:Soundcloud Widget URL" content=""/>
-        <meta name="if:Soundcloud Widget Autoplay" content="0"/>
         <meta name="if:Site Preloader" content="1"/> 
         
         
@@ -139,7 +136,7 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
     <link href="http://static.tumblr.com/b5aw2yz/VW3nj01lh/twemoji-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family={select:Google Font}:400,400italic,700,700italic">
-    <link href="http://static.tumblr.com/evx2wil/pTko97mui/core.css" rel="stylesheet">
+    <link href="http://static.tumblr.com/evx2wil/RHLob3l74/core.css" rel="stylesheet">
     
     <style type="text/css">
         
@@ -939,31 +936,6 @@
             </div>
         {/block:IfSidebarTextWidget}
         
-        {block:IfSoundcloudWidgetURL}
-            <h3>{text:Soundcloud Widget Title}</h3> 
-            <div id="fuse-sc-player" class="widget cl" style="opacity:1;">
-                <div class="sc-meta cl">
-                    <div class="img">
-                        <i class="fa fa-play" style="opacity: 0;"></i>
-                    </div>
-                    <div class="sc-info">
-                        <p class="artist"></p>
-                        <p class="track"></p>
-                    </div>
-                </div>
-                <div class="sc-controls">
-                    <div class="pause-play">
-                        <i class="fa fa-pause"></i>
-                    </div>
-                    <div class="prev">
-                        <i class="fa fa-step-backward"></i>
-                    </div>
-                    <div class="next">
-                        <i class="fa fa-step-forward"></i>
-                    </div>
-                </div>
-            </div>
-        {/block:IfSoundcloudWidgetURL}
         
         {block:IfInstagramWidgetUserID}
         <div class="instagram widget cl"> 
@@ -1373,24 +1345,12 @@
     
             <!-- Header Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://static.tumblr.com/evx2wil/ijOo9i6ra/plugins.js">
+    <script type="text/javascript" src="http://static.tumblr.com/evx2wil/L28ob3l7i/plugins.js">
     </script>
 
     <script type="text/javascript" src="http://static.tumblr.com/evx2wil/UxWo97mry/initiation.js"></script>
     <script src="http://static.tumblr.com/evx2wil/WfJo6avqo/modal.js"></script>
-    <script src="http://static.tumblr.com/evx2wil/ePto97mxl/ants.js"></script>
-    
-    {block:IfSoundcloudWidgetURL} 
-        <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
-        <script src="https://w.soundcloud.com/player/api.js"></script>
-        <script>
-            soundcloudURL = "{text:Soundcloud Widget URL}";
-            soundcloudClientID = '394aae1023264c7233cb81fab17fe036';
-            // SC.initialize({
-            //     client_id: soundcloudClientID
-            // });
-        </script>
-    {/block:IfSoundcloudWidgetURL}
+    <script src="http://static.tumblr.com/evx2wil/JdZob3l6v/ants.js"></script>
     
     {block:IfTypeKitID}
         <!-- Typekit -->
@@ -1431,9 +1391,6 @@
                         var reblogSvg = $(this).find('svg.dual-reblog');
                         $(this).find("a.reblog_button").append(reblogSvg);
                     });
-                    {block:IfSoundcloudWidgetURL}
-                        $.fuseSC({block:IfSoundcloudWidgetAutoplay}true{/block:IfSoundcloudWidgetAutoplay});
-                    {/block:IfSoundcloudWidgetURL}
                 });
                 
                 $antsIsoCont = $('#fuse-ants');
@@ -1514,10 +1471,6 @@
         });
         {/block:IfDribbbleWidgetAccessToken}
     </script>
-
-    {block:IfSoundcloudWidgetURL}
-        <div id="fuse-sc"></div>
-    {/block:IfSoundcloudWidgetURL}
 
     {block:Twitter}
         <script src="/tweets.js"></script>    
